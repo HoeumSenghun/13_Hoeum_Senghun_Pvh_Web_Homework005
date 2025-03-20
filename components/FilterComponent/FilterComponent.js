@@ -18,7 +18,7 @@ export default function FilterComponent({ category }) {
         >
           {category?.map((item) => (
             <option value={item.id} key={item.id}>
-              {item.book_cate_name}
+              {item.book_cate_name??item.cartoon_genre}
             </option>
           ))}
         </select>

@@ -5,12 +5,6 @@ import FilterComponent from "@/components/FilterComponent/FilterComponent";
 import { getBookByCategoryId } from "@/service/book-service";
 
 export default async function BookCategories({ searchParams }) {
-  // const headersList = headers();
-  // const referer = headersList.get("referer") || ""; // Get the referring URL
-
-  // let pageTitle = "Homepage";
-  // if (referer.includes("/book-categories")) pageTitle = "All Books";
-  // if (referer.includes("old-school-cartoons")) pageTitle = "Old School Cartoons";
 
   const books = await getAllBooks();
   const category = await getAllCategories();
@@ -103,42 +97,6 @@ export default async function BookCategories({ searchParams }) {
                 </div>
               ))
             )}
-
-            {/* {books.length === 0 ? (
-              <p className="text-center">No books available</p>
-            ) : (
-
-
-
-              books.map((book) => (
-                <div
-                  key={book.id}
-                  className="relative bg-[#F5F7F8] mt-40 gap-8 shadow-lg rounded-3xl p-4 flex items-center max-w-lg hover:shadow-xl w-[600px] h-[250px] transition-shadow"
-                >
-                  <div className="w-2/5 h-[200px] gap-3 flex flex-col justify-between -mt-60">
-                    <img
-                      src={book.image || "/placeholder.svg?height=280&width=200"}
-                      alt={book.book_title}
-                      className="w-45 h-70 object-cover rounded-3xl"
-                    />
-                    <Link
-                      href={`/book-categories/${book.id}`}
-                      className="px-4 py-2 bg-[#BFD7EA] text-[#0B3954] font-semibold rounded-3xl hover:bg-[#087E8B] hover:text-white transition-colors"
-                    >
-                      READ FULL ARTICLE
-                    </Link>
-                  </div>
-                  <div className="w-3/5">
-                    <h3 className="text-xl font-semibold text-[#0B3954] mb-2">
-                      {book.book_title}
-                    </h3>
-                    <p className="text-[#0B3954] line-clamp-6">
-                      {book.description}
-                    </p>
-                  </div>
-                </div>
-              ))
-            )} */}
           </div>
         </div>
       </div>
