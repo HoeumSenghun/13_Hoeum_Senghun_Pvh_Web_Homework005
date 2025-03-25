@@ -17,7 +17,7 @@ const SidebarComponent = () => {
       <aside className="w-full min-h-screen bg-white shadow-lg p-6 flex flex-col items-center">
         <img src=".././profile.png" className="w-20 h-20 rounded-full mb-3"/>
         <h2 className="text-xl text-black font-semibold">Black Monster</h2>
-        <p className="text-[#087E8B] text-lg font-semibold mb-6">blackmonster@gmail.com</p>
+        <p className="text-[#087E8B] text-md font-semibold mb-6">blackmonster@gmail.com</p>
         <nav className="w-full">
           <ul className="space-y-1">
             <SidebarItem icon={<Home />} text="Home" href="/home" />

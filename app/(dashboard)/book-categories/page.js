@@ -9,6 +9,10 @@ export default async function BookCategories({ searchParams }) {
   const books = await getAllBooks();
   const category = await getAllCategories();
 
+  const search = (await searchParams).search;
+  // const queryId= (await searchParams).query;
+  console.log(search);
+
   // console.log(category)
   const categoryId = (await searchParams).categoryId;
   console.log(categoryId);
@@ -28,6 +32,7 @@ export default async function BookCategories({ searchParams }) {
         <div className="border-b border-[#087E8B] mb-4"></div>
         <div className="max-h-[75vh] overflow-y-auto">
           <div className="grid grid-cols-2 gap-24 my-10">
+            {/* {search&&} */}
             {!categoryId ? (
               books.length === 0 ? (
                 <p className="text-center">No books available</p>

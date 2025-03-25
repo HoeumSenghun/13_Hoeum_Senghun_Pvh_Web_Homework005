@@ -23,18 +23,6 @@ export default function DashboardLayout({ children }) {
 
       <section className="col-span-9 bg-gray-200">
         <SearchComponent />
-        {/* <div className="bg-white h-[90vh] rounded-3xl ml-9 mr-9 p-10">
-          <div>
-            <div className="flex justify-between">
-              <div className="w-60 h-10 bg-gray-200 text-lg font-semibold text-center text-[#087E8B] rounded-xl mb-2">
-                {getPageTitle()}
-              </div>
-              <div className="mb-4"><FilterComponent /></div>
-            </div>
-            <div className="border-b border-[#087E8B] mb-4"></div>
-            <div className="max-h-[75vh] overflow-y-auto">{children}</div>
-          </div>
-        </div> */}
         <div>
           {children}
         </div>
