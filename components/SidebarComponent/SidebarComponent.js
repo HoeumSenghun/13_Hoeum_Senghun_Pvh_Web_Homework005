@@ -20,7 +20,7 @@ const SidebarComponent = () => {
         <p className="text-[#087E8B] text-md font-semibold mb-6">blackmonster@gmail.com</p>
         <nav className="w-full">
           <ul className="space-y-1">
-            <SidebarItem icon={<Home />} text="Home" href="/home" />
+            <SidebarItem icon={<Home />} text="Home" href="/" />
             <SidebarItem icon={<Book />} text="Book Categories" href="/book-categories" />
             <SidebarItem icon={<Smile />} text="Old-School Cartoons" href="/old-school-cartoons" />
             <SidebarItem icon={<Film />} text="Movies & TV Shows" href="#" />
